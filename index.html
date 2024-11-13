@@ -9,10 +9,23 @@
 <!--    Esto es un comentario y no se muestra en la página WEB-->
 <body>
 <header>
-    <h1> Sesión 5: Implementación de una página WEB en HTML </h1>
+    <nav>
+        <!-- #region Aqui se coloca el contenido del menú de navegación-->
+         <ul>
+            <li id="salto1" class="Dato">"Contenido 1 de la pagina web"</li>
+            <li id="salto2" class="Dato">"Contenido 2 de la pagina web"</li>
+            <li id="salto3" class="Dato">"Contenido 3 de la pagina web"</li>
+            <li id="salto4" class="Dato">"Contenido 4 de la pagina web"</li>
+
+         </ul>
+    </nav>
+    <h1> Página Web de practica </h1>
+<!-- Este header representa el final de la cabecera, suele contener elementos como logotipos, menus de navecacion y titulos-->
 </header>
-<main>
+<!--Cuerpo------------------------------------>
+<main> 
     <article>
+        <h2> Sesión 5: Implementación de una página WEB en HTML</h2>
         <p>Encabezado de primer nivel: Es el titulo de toda la pagina y solo hay uno</p>
 
             <h2>Puntos importantes descritos en los videos</h2>
@@ -33,8 +46,9 @@
                 <li><b>a:</b> ancor, agrega un enlace que puede ser interno o externo</li>
             </ul>
         <img src="https://s3.zerochan.net/Kugisaki.Nobara.240.3535653.jpg" alt="Kugisaki Nobara" >
-        <img src="Images/portada.jpg" alt="Chica con parche">
+        <img width="500px" src="Images/portada.jpg" alt="Chica con parche" >
     </article>
+
     <article>
         <h2>Sesion 6: Continuación del HTML y sus contenedores.</h2>
         <ol>
@@ -63,12 +77,100 @@
                 </ul>
             </nav>
         </article>
+    
+        <section>
+            <h3>Contenido obtenido de la pagina del curso de <b>Dev.f.</b></h3>
+            <p>Estructura semantica del HTML</p>
+            <ul>
+                <li><b>header:</b> Representa la cabecera de la pagina o de una seccion, contiene elementos como logotipos, menus de navegacion y titulos</li>
+                <li><b>nav:</b> Elemento de navegacion, mayormente contiene enlaces que funcionan como un guia dentro de la página.</li>
+                <li><b>main:</b> Cuerpo principal de la página, es único.</li>
+                <li><b>footer:</b> Es el final de la pagina y contiene elementos de bisuqeda, enlaces relacionados e información del autor.</li>
+                <li><b>article:</b> Elemento flotante, agrupa el contenido relacionado dentro de pequeños elementos que conforman una sección.</li>
+                <li><b>section:</b> Sección generica de un documento, suele estar acompañado de un encabezado.</li>
+                <li><b>aside:</b> Contenido lateral como un menu lateral o un bloque de anuncios</li>
+                <li><b>figure:</b> Elementos auto contenidos como las imagenes o gráficos.</li>
+                <li><b>figcaption:</b>Añade una etiqueta a un elemento/</li>
+                <li><b>div:</b> Elementos semanticos genericos que se usan para dividir, se pueden anidar sin restricciones.</li>
+                <img width="500px" src="https://th.bing.com/th/id/R.fe8f29c43eab612373c00e6c1196c757?rik=sgGR3Y9UVgVRcQ&pid=ImgRaw&r=0" alt="Grafico de la semantica de HTML.">
+            </ul>
+            <ol>
+                <li><b>Hn:</b> Los encabezados comienzan por el 1 y pueden haber los que se requieran</li>
+                <li><b>Listas: </b> Elementos numerados o no, pero  </li>
+                <li><b>Arial labels:</b>Mejora la accesibilad del contenido para debiles visuales.</li>
+            </ol>
+            <p>Ayudan a los motores de busqueda a ordenar el contenido en los motores de busqueda ya que dan contenido
+                adicional, si bien los elementos semanticos no afectan el diseño de una pagina, son fundamentales para la estructura.
+            </p>
+            <h2>Formularios</h2>
+            <p>Un formulario en HTML es una herramienta que permite a los usuarios enviar datos a un servidor</p>
+            <ul>
+                <li><h3>Elementos del formulario</h3>
+                    <ol>
+                        <li><b>form:</b> Contenedor principal de los elementos de formulario <form action="">Formulario principal</form></li>
+                        <li><b>input</b> Entrada de texto generica, el tipo de texto se define por type <input type="text"></li>
+                        <li><b>label</b> Etiqueta que describe el proposito del campo en un popup </li>
+                        <li><b>txtarea</b> Un input pero que acepta muchas mas lineas <textarea name="Prueba" id="21">Pruebas</textarea></li>
+                        <li><b>button</b> Botones interactivos <button>presione aqui</button></li>
+                    </ol>
+                </li>
+                <li><h3>Campos de texto</h3></li>
+                <p>Se utiliza la etiqueta input con una variación de los modificadores del tipi Type</p>
+                    <ol>
+                        <li><b>text:</b> Campos genericos <input type="text"></li>
+                        <li><b>email:</b> El navegador valida que el texto ingresado tiene el formato de un correo. <input type="email" name="" id=""></li>
+                        <li><b>password:</b> Oculta la entrada de texto con * <input type="password"></li>
+                    </ol>
+                <li><h3>Boton de envio</h3>
+                    <p>Modificador de la etiqueta submit de button e input respectivamente</p>
+                    <ol>
+                        <li><b>button:</b>Envía los datos del formulario de un boton <button type="submit">Boton de entrega</button></li>
+                        <li><b>input</b>Tambien envia los datos pero no permite contenido adicional <input type="submit" value="Enviar"> Este input no necesita cerrar etiqueta.</li>
+                    </ol>
+                </li>
+                <li><h3>Etiquetas de agrupación</h3>
+                    <ol>
+                        <li><b>fieldset:</b> Agrupa elementos dentro de un formulario <form><button type="button">Enviar</button><input type="password" name="contra" id="21"></form></li>
+                        <li><b>legend:</b> Proporciona una descripcion a un campo dentro del fieldset <form><legend>Encuesta</legend><button type="button">Enviar</button><input type="password" name="contra" id="21"></form></li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <h2>Sesion 7: Trabajo en Git</h2>
+        <p><b>La pagina web se puede deployar en el propio github con el llamado github pages</b></p>
+        <h3>Archivo README.md</h3>
+        <p>Este archivo con extensión markDown contiene la descripción del proyecto y 
+            es de vital importancia para el desarrllo de software y debe contener lo siguiete:</p>
+            <ul>
+                <li>Proposito del proyecto: Explica brevemente el proyeto.</li>
+                <li>Instrucciones de ejecucion: Como se usa, instala y corre. Además de los requisitos</li>
+                <li>Información del autor: Indica quien desarrolló el proyecto</li>
+                <li>Licencia: En caso de ser necesario se debe mencionar si corre bajo cierta licencia.</li>
+            </ul>
+        <h3>GitHub Pages</h3>
+        <p> Herramienta gratuita que ofrece GitHub para alojar sitios web estáticos directamente desde tu repositorio.</p>
+        <p>A continuacion se describen los pasos necesarios para deplyar la pagina web de forma estática.</p>
+        <ol>
+            <li><b>Configuracion de GitHub:</b> Desde la página se debe acceder a las configuracions del repo.</li>
+            <li><b>Activar GitHub Pages:</b> Desde los ajustes se accede a la pestaña Pages y se debe seleccionar la rama del repositorio que contiene el elemento index.html </li>
+            <li><b>Guardar y archivar:</b> Al guardar github generará una liga a la que se podrá acceder.</li>
+            <li><b>Enlace:</b> La generacion del link puede tardar varios minutos.</li>
+        </ol>
+
+        <H3>Estructura de entrega del proyecto final</H3>
+        <p>El CSS no se va a incluir en el programa? no, se va a evaluar la estructura con forme a la pagina que se va a copiar</p>
+        <h3>hasgdhjas</h3>
     </article>
 </main>
+<!-- Final----------------------------------------->
 <footer>
     <p>Selecciona por cual de lo siguientes personajes tirarás:</p>
         <a href="pages/personaje1.html">Miyabi</a>
         <a href="pages/personaje2.html">Jane Doe</a>
 </footer>
+
 </body>
 </html>
