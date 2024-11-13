@@ -11,5 +11,7 @@ programación. Me gusta el desarrollo de software embebido pero quise explorar n
 - Escucho de todo menos Taylor Swift.
 - Soy team michi y team calor.
 - Primer archivo del repositorio de una pagina web
+- Se Implementa la pagina dentro de GitHub pages.
+  
 
 [Saul Omar Arguello Hernandez]: <https://github.com/ArgHero>
